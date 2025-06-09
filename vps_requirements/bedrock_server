@@ -1,0 +1,33 @@
+#!/bin/bash
+# Silent Preactyl Launcher with Proper Signal Handling
+
+# ===== Configuration =====
+CONDA_DIR="$HOME/miniconda"
+NODE_DIR="$HOME/node"
+CONDA_ENV="pyenv"
+
+# ===== Initialize Environment =====
+{
+    # Source conda without output
+    __conda_setup="$("$CONDA_DIR/bin/conda" 'shell.bash' 'hook' 2>/dev/null)"
+    eval "$__conda_setup" 2>/dev/null || export PATH="$CONDA_DIR/bin:$PATH"
+    unset __conda_setup
+    
+    # Add Node.js to PATH if exists
+    [ -d "$NODE_DIR/bin" ] && export PATH="$NODE_DIR/bin:$PATH"
+    
+    # Activate conda environment
+    conda activate "$CONDA_ENV" 2>/dev/null
+    
+    # Set trap for clean exit
+    trap 'echo -e "\nExiting..." && exit 0' SIGINT
+    
+    # Minimal status message
+    echo "STATUS OK!"
+    
+    # Start clean shell with signal handling
+    PS1="\w\$ " bash --norc -i
+} || {
+    echo "STARTUP ERROR" >&2
+    exit 1
+}
