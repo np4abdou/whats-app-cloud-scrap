@@ -1,0 +1,62 @@
+[
+    {
+        "domain": "www.pinterest.com",
+        "expiry": 1749501164,
+        "httpOnly": false,
+        "name": "sessionFunnelEventLogged",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "1"
+    },
+    {
+        "domain": ".pinterest.com",
+        "expiry": 1784017965,
+        "httpOnly": false,
+        "name": "_b",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "\"AYnqlmQlNpxOj7mxQBnhAhwR4KrGfWcLpB3EL1w2NYSyVnNZ/EnZCmCxV2Ig3vRespY=\""
+    },
+    {
+        "domain": ".pinterest.com",
+        "expiry": 1780561962,
+        "httpOnly": true,
+        "name": "_auth",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "0"
+    },
+    {
+        "domain": ".pinterest.com",
+        "expiry": 1780561962,
+        "httpOnly": true,
+        "name": "_pinterest_sess",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "value": "TWc9PSZLR25UalNFRFcrVVVEOURtV1pHRlozQWFFbUpabTFYamxoc0E0M0xSNllPWHFFQm1Md0R1Z2Fxa3VMTHhLamFqMm1pV1F5UVhQcjYrYkVEOWFqbTRxdGNWTmJBMnVuRytJc1F2eWlwR3RVUT0mUTVqVEFnMFVhaTAra0RLZmJIelBaQi81R0FvPQ=="
+    },
+    {
+        "domain": "www.pinterest.com",
+        "expiry": 1749544362,
+        "httpOnly": true,
+        "name": "_routing_id",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "\"7041a577-68b2-4483-9bbc-1dfa8b2d8a0f\""
+    },
+    {
+        "domain": "www.pinterest.com",
+        "expiry": 1780993962,
+        "httpOnly": false,
+        "name": "csrftoken",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "a5abeba412ba0c33bafe18023679e361"
+    }
+]
